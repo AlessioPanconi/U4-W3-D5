@@ -26,7 +26,7 @@ public class Prestito {
     @JoinColumn(name = "utente_id")
     private Utente utente;
     //ELEMENTOPRESTABILE
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "elemento_prestabile_id")
     private ElementoPrestabile elementoPrestabile;
 
