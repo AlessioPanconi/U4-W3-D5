@@ -1,5 +1,5 @@
 package alessiopanconi.entities.enums;
 
 public enum Genere {
-    ROMANTICO,HORROR,FANTASY,AVVENTURA
+    ROMANTICO , HORROR, FANTASY, NARRATIVA, ROMANZOSTORICO,
 }

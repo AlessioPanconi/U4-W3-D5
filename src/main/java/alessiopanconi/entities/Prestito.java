@@ -1,5 +1,6 @@
 package alessiopanconi.entities;
 
+import alessiopanconi.entities.elementoPrestabileFigli.Libro;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
