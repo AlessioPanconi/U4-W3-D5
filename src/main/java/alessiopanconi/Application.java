@@ -50,22 +50,22 @@ public class Application {
 //        ep.salvaElementoPrestabile(r1);
 //        ep.salvaElementoPrestabile(r2);
 
-            Utente utenteFromDb1 = u.trovaUtentePerId(102);
-            Utente utenteFromDb2 = u.trovaUtentePerId(103);
-            Utente utenteFromDb3 = u.trovaUtentePerId(104);
-            Utente utenteFromDb4 = u.trovaUtentePerId(105);
+//            Utente utenteFromDb1 = u.trovaUtentePerId(102);
+//            Utente utenteFromDb2 = u.trovaUtentePerId(103);
+//            Utente utenteFromDb3 = u.trovaUtentePerId(104);
+//            Utente utenteFromDb4 = u.trovaUtentePerId(105);
+//
+//            ElementoPrestabile elementoPrestabilefromDb1 = ep.trovaElementoPrestabilePerId(302);
+//            ElementoPrestabile elementoPrestabilefromDb2 = ep.trovaElementoPrestabilePerId(303);
+//            ElementoPrestabile elementoPrestabilefromDb3 = ep.trovaElementoPrestabilePerId(304);
+//            ElementoPrestabile elementoPrestabilefromDb4 = ep.trovaElementoPrestabilePerId(305);
+//            ElementoPrestabile elementoPrestabilefromDb5 = ep.trovaElementoPrestabilePerId(306);
 
-            ElementoPrestabile elementoPrestabilefromDb1 = ep.trovaElementoPrestabilePerId(302);
-            ElementoPrestabile elementoPrestabilefromDb2 = ep.trovaElementoPrestabilePerId(303);
-            ElementoPrestabile elementoPrestabilefromDb3 = ep.trovaElementoPrestabilePerId(304);
-            ElementoPrestabile elementoPrestabilefromDb4 = ep.trovaElementoPrestabilePerId(305);
-            ElementoPrestabile elementoPrestabilefromDb5 = ep.trovaElementoPrestabilePerId(306);
 
-
-        Prestito p1 = new Prestito(LocalDate.of(2020,10,20),LocalDate.of(2020,10,29),utenteFromDb1,elementoPrestabilefromDb1);
-        Prestito p2 = new Prestito(LocalDate.of(2010,10,20),LocalDate.of(2020,1,15),utenteFromDb2,elementoPrestabilefromDb2);
-        Prestito p3 = new Prestito(LocalDate.of(2015,10,20),LocalDate.of(2015,12,13),utenteFromDb4,elementoPrestabilefromDb3);
-        Prestito p4 = new Prestito(LocalDate.of(2017,10,20),LocalDate.of(2017,11,1),utenteFromDb3,elementoPrestabilefromDb5);
+//        Prestito p1 = new Prestito(LocalDate.of(2020,10,20),LocalDate.of(2020,10,29),utenteFromDb1,elementoPrestabilefromDb1);
+//        Prestito p2 = new Prestito(LocalDate.of(2010,10,20),LocalDate.of(2020,1,15),utenteFromDb2,elementoPrestabilefromDb2);
+//        Prestito p3 = new Prestito(LocalDate.of(2015,10,20),LocalDate.of(2015,12,13),utenteFromDb4,elementoPrestabilefromDb3);
+//        Prestito p4 = new Prestito(LocalDate.of(2017,10,20),LocalDate.of(2017,11,1),utenteFromDb3,elementoPrestabilefromDb5);
 
 //        p.salvaPrestito(p1);
 //        p.salvaPrestito(p2);
@@ -81,6 +81,7 @@ public class Application {
 //        ep.ricercaElementoPrestabilePerAutore("J. R. R. Tolkien").forEach(System.out::println);
 //        ep.ricercaElementoPrestabilePerTitolo("Il signore degli anelli").forEach(System.out::println);
 //        ep.ricercaElementoPrestabilePerTitolo("Il").forEach(System.out::println);
+            ep.ricercaElementiInPrestitoConNumeroTessera(777).forEach(System.out::println);
         }catch(ElementoNonTrovato ex)
         {
             System.out.println(ex.getMessage());
